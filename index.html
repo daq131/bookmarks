@@ -11,7 +11,7 @@
 </head>
 <body>
     <!-- open modal -->
-    <h1 class="show-modal">Add Bookmark</h1>
+    <h1 id="show-modal">Add Bookmark</h1>
     <!-- bookmarks -->
     <div class="container" id="bookmarks-container">
         <div class="item">
@@ -37,7 +37,7 @@
         </div>
     </div>
     <!-- modal -->
-    <div class="modal-container show-modal" id="modal">
+    <div class="modal-container" id="modal">
         <div class="modal">
             <i class="fas fa-xmark close-icon" id="close-modal"></i>
             <div class="modal-header">
@@ -47,13 +47,13 @@
                 <form action="" id="bookmark-form">
                     <!-- website name -->
                     <div class="form-group">
-                        <label for  ="website-name" class="form-label">Website name</label>
+                        <label for="website-name" class="form-label">Website name</label>
                         <input type="text" class="form-input" id="website-name">
                     </div>
 
                     <!-- website url -->
                     <div class="form-group">
-                        <label for  ="website-url" class="form-label">Website URL</label>
+                        <label for="website-url" class="form-label">Website URL</label>
                         <input type="text" class="form-input" id="website-url">
                     </div>
                     <button type="submit">Save</button>
