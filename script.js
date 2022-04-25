@@ -42,6 +42,7 @@ function buildBookmarks() {
   // Build items
   bookmarks.forEach((bookmark) => {
     const { name, url } = bookmark;
+    console.log(bookmarks);
     // Item
     const item = document.createElement('div');
     item.classList.add('item');
@@ -79,9 +80,11 @@ function fetchBookmarks() {
     bookmarks = [
       {
         name: 'Szariqs projects',
-        url: '  https://github.com/daq131',
+        url: 'http://github.com/daq131',
       },
+      
     ];
+    
     localStorage.setItem('bookmarks', JSON.stringify(bookmarks));
   }
   buildBookmarks();

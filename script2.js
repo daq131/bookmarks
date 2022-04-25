@@ -37,13 +37,14 @@ function validate(nameValue, urlValue) {
 
 // Build Bookmarks
 function buildBookmarks() {
+	console.log(bookmarks);
 	// Remove all bookmark elements
 	bookmarksContainer.textContent = '';
 	// Build items
 	Object.keys(bookmarks).forEach((id) => {
-
+		console.log(bookmarks[id]);
 		const { name, url } = bookmarks[id];
-
+		
 		// Item
 		const item = document.createElement('div');
 		item.classList.add('item');
@@ -78,10 +79,10 @@ function fetchBookmarks() {
 		bookmarks = JSON.parse(localStorage.getItem('bookmarks'));
 	} else {
 		// Create bookmarks object in localStorage
-		const id = `http://jacinto.design`
+		const id = `http://github.com/daq131`
 		bookmarks[id] = {
-			name: 'Jacinto Design',
-			url: 'http://jacinto.design',
+			name: 'Szariq projects',
+			url: 'http://github.com/daq131',
 		}
 
 		localStorage.setItem('bookmarks', JSON.stringify(bookmarks));
